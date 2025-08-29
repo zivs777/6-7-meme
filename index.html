@@ -2,24 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>6–7</title>
   <style>
     body {
-      margin: 0;
       background-color: #000;
+      color: #00ffe0;
+      font-family: 'Segoe UI', sans-serif;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      font-family: 'Segoe UI', sans-serif;
     }
 
     .meme-text {
       font-size: 10rem;
-      color: #00ffe0;
       text-shadow: 0 0 20px #00ffe0;
       animation: pulse 1.5s infinite;
+    }
+
+    button {
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      background-color: #00ffe0;
+      color: #000;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
     }
 
     @keyframes pulse {
@@ -31,5 +41,9 @@
 </head>
 <body>
   <div class="meme-text">6–7</div>
+
+  <!-- 🔊 Audio player and button -->
+  <audio id="voiceClip" src="6-7.m4a"></audio>
+  <button onclick="document.getElementById('voiceClip').play()">🔊 Play 6–7</button>
 </body>
 </html>
